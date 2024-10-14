@@ -1,0 +1,213 @@
+/* Para phablets o teléfonos grandes (entre 413px y 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    * {
+        margin: 0;
+        font-size: 17px; /* Ajusta a un tamaño más legible */
+    }
+
+    
+
+
+
+
+
+    
+
+    
+    /* Contenedor de iconos */
+    .icon-container {
+        margin-right: 1em;
+    }
+
+    /* Contenedor del footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para secciones */
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Espacio entre columnas */
+    
+}
+
+
+
+/* Contenedor de cada sección del footer */
+.contenedor_seccion {
+    margin-bottom: 3%;
+}
+
+/* Encabezado del menú (para secciones desplegables en móvil) */
+.encabezado-menu {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex; /* Usar flexbox para alinear la flecha y el título */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alinear flecha con el h4 (colocamos la flecha delante del h4) */
+.encabezado-menu h4 {
+    margin: 0;
+    flex-grow: 1; /* Esto asegura que el h4 ocupe el espacio restante */
+     /* Ajusta la alineación del texto */
+}
+
+.flecha {
+    font-size: 18px;
+    /* margin-left: ; Añadir margen entre el h4 y la flecha */
+}
+
+/* Contenido oculto que se mostrará al hacer clic */
+.oculto {
+    display: none;
+}
+
+
+
+
+/* Estilos del contenido del filtro */
+.contenido_filtro {
+    list-style-type: none;
+    display: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+/* Estilos para cada elemento dentro del filtro */
+.contenido_filtro li {
+    margin-bottom: 10px;
+}
+.contenido_filtro.visible {
+    display: block;
+}
+
+
+
+
+
+footer {
+    position: relative;
+    top: 20em;
+       background-color: #f5f5f5; 
+    padding: 1%;
+    margin-top: 0; 
+    border-top: 1px solid #ccc;  
+}
+
+.footer-container {
+    /* display: flex;
+    justify-content: space-around; */
+    width: 100%;
+   
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1%;
+   
+}
+
+.footer-section h4 {
+    color: #333;
+     /* margin-bottom: ;  */
+   
+}
+
+.footer-section p {
+    color: #666;
+    margin: 1% 0;
+}
+
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section i {
+    margin-right: 1%;
+}
+
+.footer-section p a:hover {
+    color: #000; 
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: #333; 
+}
+
+.footer-section p i {
+    color: #333; 
+}
+
+.icon {
+    font-size: 1.25rem; 
+    color: #605c5c; 
+    margin: 10px;
+    /* margin-right:  1%;  */
+    text-decoration: none; 
+   
+}
+
+
+.matelsa{
+    color: #4f4d4d;
+    font-weight: bold; 
+}
+.matelsa:hover{
+    text-decoration: underline;
+}
+.terminos{
+    color: rgb(109, 104, 104);
+
+}
+.terminos:hover{
+    text-decoration: underline;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    
+    *{
+        font-size: 15px;
+    }
+
+    .boton{
+        width: 30em;
+    }
+
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-section.escritorio {
+        display: none; /* Oculta las secciones de escritorio en móviles */
+    }
+    
+    .footer-section.movil {
+        display: block; /* Muestra solo las secciones móviles */
+    }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 769px) {
+    .footer-section.movil {
+        display: none; /* Oculta las secciones móviles en escritorio */
+    }
+}
